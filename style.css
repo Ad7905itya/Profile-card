@@ -1,0 +1,144 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.profile-card{
+    max-width: 370px;
+    width: 100%;
+    padding: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: #fff;
+    position: relative;
+    border-radius: 24px;
+    box-shadow: 0  5px 10px rgb(0,0,0,0.5);
+}
+
+.image{
+    width: 150px;
+    height: 150px;
+    padding: 2px;
+    margin-top: 40px;
+    border: 4px solid rgb(14, 142, 131);
+    background-color: #fff;
+    border-radius: 50%;
+    position: relative;
+}
+
+
+.profile-card::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 26%;
+    background-color: #701edc;
+    border-radius: 24px 24px 0 0;
+}
+
+.image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+h2{
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-family: sans-serif;
+}
+
+p{
+    font-family: cursive;
+    color: gray;
+}
+
+.share-group{
+    margin-top: 30px;
+}
+
+.share{
+    font-size: 40px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.share:hover{
+    opacity: 0.9;
+}
+
+#fb{
+    color: rgb(36, 36, 252);
+}
+
+#twitter{
+    color: rgb(0, 255, 242);
+}
+
+#insta{
+    color: rgb(218, 39, 81);
+}
+
+#youtube{
+    color: red;
+}
+
+.btn-group{
+    display: flex;
+    margin-top: 30px;
+    margin-left: -5px;
+    width: 70%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn{
+    padding: 10px 12px;
+    font-size: 18px;
+    outline: none;
+    background-color: rgb(73, 92, 215);
+    color: #fff;
+    border: none;
+    border-radius: 18px;
+    cursor: pointer;
+}
+
+.btn:hover{
+    opacity: 0.8;
+}
+
+
+.like-box{
+    margin-bottom: 10px;
+    margin-top: 40px;
+    display: flex;
+    gap: 30px;
+}
+
+.box{
+    font-size: 16px;
+    text-wrap: nowrap;
+    cursor: pointer;
+    color: #1b1b1b;
+}
+
+.fa-solid:hover{
+    transform: scale(1.3);
+}
+
+.like{
+    color: #0e019a;
+}
